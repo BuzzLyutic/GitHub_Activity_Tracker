@@ -6,7 +6,6 @@ import (
 	"io"
 	"net/http"
 	"os"
-	//"github.com/urfave/cli/v2"
 )
 
 const GITHUBAPIURL = "https://api.github.com/users/%s/events"
@@ -45,6 +44,7 @@ func fetchGitHubActivity(username string) ([]ApiResponse, error) {
 }
 
 func main() {
+	// Program stops executing when the GitHub activity is fetched or error occured.
 
 	fmt.Println("The GitHub Activity Tracker Program")
 
